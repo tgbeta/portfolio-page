@@ -1,0 +1,28 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  color: #FFE291;
+}
+
+/*Header*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ol {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.resume-button {
+  color: #FFE291;
+  border: 0.063rem solid #FFE291;
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 0.938rem;
+}/*# sourceMappingURL=style.css.map */

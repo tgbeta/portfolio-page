@@ -1,0 +1,33 @@
+$font-stack: 'Open Sans', sans-serif;
+$primary-color: #FFE291;
+
+body {
+    font-family: $font-stack;
+    background-color: black;
+    color: $primary-color;
+}
+
+/*Header*/
+
+.menu {
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu ol {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+
+.resume-button {
+    color: $primary-color;
+    border: 0.063rem solid $primary-color;
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1rem;
+    font-family: $font-stack;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 0.938rem;
+}
