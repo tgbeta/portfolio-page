@@ -1,10 +1,14 @@
 $font-stack: 'Open Sans', sans-serif;
+$font-title: 'Righteous', cursive;
 $primary-color: #FFE291;
+$title-color: #6e6d6c;
+$text-color: #cbcbcb;
 
 body {
     font-family: $font-stack;
-    background-color: black;
+    background-color: #000000;
     color: $primary-color;
+    height: 100%;
 }
 
 /*Header*/
@@ -20,6 +24,14 @@ body {
     gap: 2rem;
 }
 
+.menu a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: $text-color;
+}
 
 .resume-button {
     color: $primary-color;
@@ -31,3 +43,84 @@ body {
     cursor: pointer;
     margin-left: 0.938rem;
 }
+
+/*Main*/
+.container{
+    display: flex;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;   
+}
+
+/*Left Sidebar - Social Media*/
+.left-sidebar{
+    display: block;
+    position: sticky;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.line {
+    width: 1px;
+    height: 90px;
+    border-left: 1px solid $primary-color;
+    margin-top: 2rem;
+}
+
+.social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Main*/
+.about {
+    margin: 5rem; 
+    margin-top: 10rem;
+}
+
+.about h2 {
+    color: $title-color;
+    font-family: $font-title;
+    font-size: 6rem;
+    margin: 0;
+}
+
+.about h3 {
+    color: $text-color;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.about p {
+    color: $text-color;
+}
+
+.linkedin-button {
+    color: $primary-color;
+    border: 0.063rem solid $primary-color;
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1rem;
+    font-family: $font-stack;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Right Sidebar*/
+.right-sidebar {
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.right-sidebar a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    
+}
+
