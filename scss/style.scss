@@ -11,6 +11,13 @@ body {
     height: 100%;
 }
 
+h2 {
+    color: $title-color;
+    font-family: $font-title;
+    font-size: 6rem;
+    margin: 0;
+}
+
 /*Header*/
 
 .menu {
@@ -31,6 +38,7 @@ body {
 
 .menu a:hover {
     color: $text-color;
+    font-weight: bold;
 }
 
 .resume-button {
@@ -48,7 +56,7 @@ body {
 .container{
     display: flex;
     position:absolute;
-    top:0px;
+    top:5rem;
     right:0px;
     bottom:0px;
     left:0px;   
@@ -60,6 +68,11 @@ body {
     position: sticky;
     flex-direction: column;
     align-self: flex-end;
+}
+
+.left-sidebar a {
+    color: $primary-color;
+    text-decoration: none;
 }
 
 .line {
@@ -76,17 +89,10 @@ body {
 }
 
 
-/*Main*/
+/*Index*/
 .about {
     margin: 5rem; 
-    margin-top: 10rem;
-}
-
-.about h2 {
-    color: $title-color;
-    font-family: $font-title;
-    font-size: 6rem;
-    margin: 0;
+    margin-top: 5rem;
 }
 
 .about h3 {
@@ -109,6 +115,171 @@ body {
     cursor: pointer;
 }
 
+/*Skills*/
+.skills {
+    margin: 5rem; 
+    margin-top: 5rem;
+}
+
+.skills ol {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    column-gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    font-size: 3rem;
+    color: $text-color;
+}
+
+/*Qualifications*/
+
+.qualifications a {
+    text-decoration: none;
+  }
+
+.qualifications h3, p {
+    color: $text-color;
+}
+  
+  #qualifications-items {
+    margin: 5rem; 
+    margin-top: 5rem;
+  }
+  
+  .tabs-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tabs-nav li {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.78);
+    color: $primary-color;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: $primary-color;
+    margin-right: 5px;
+  }
+  
+  .tabs-nav a {
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: $text-color;
+  }
+  
+  .tabs-nav li.active {
+    background: $primary-color;
+    color: #000000;
+  }
+  
+  .tabs-nav li.active a {
+    color: inherit;
+  }
+  
+  .tabs-content {
+    border: 1px solid $primary-color;
+    padding: 10px;
+    margin-top: -1px;
+    overflow: hidden;
+  }
+  
+  .tabs-content div:not(:first-child) {
+    display: none;
+  }
+
+
+/* Projects */
+.projects {
+    margin: 5rem; 
+    margin-top: 5rem;
+}
+
+.project-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-items ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    column-gap: 5rem;
+    justify-content: center;
+}
+
+.project-list-items {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projects a {
+    color: $text-color;
+    text-decoration: none;
+}
+
+/* Contact */
+.contact {
+    margin: 5rem; 
+    margin-top: 5rem;
+}
+
+.contact form {
+    margin: 0 auto;
+    width: 1020px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+  
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.contact form li + li {
+    margin-top: 1em;
+}
+  
+.contact label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+  
+input, textarea {
+    width: 600px;
+    box-sizing: border-box;
+    border: 1px solid $primary-color;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+  
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+  
+.button {
+    padding-left: 90px;
+}
+  
+button {
+    margin-left: .5em;
+}
+
 /*Right Sidebar*/
 .right-sidebar {
     writing-mode: vertical-rl;
@@ -124,3 +295,15 @@ body {
     
 }
 
+@media screen and (min-device-width:320px) and (max-device-width: 480px) {
+
+.left-sidebar{
+    display: none;
+}
+
+.right-sidebar{
+    display: none;
+}
+
+
+}
