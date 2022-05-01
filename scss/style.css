@@ -12,6 +12,10 @@ h2 {
   margin: 0;
 }
 
+.content {
+  width: 100%;
+}
+
 /*Header*/
 .menu {
   display: flex;
@@ -96,6 +100,7 @@ h2 {
 
 .about p {
   color: #cbcbcb;
+  padding-bottom: 1rem;
 }
 
 .linkedin-button {
@@ -134,7 +139,8 @@ h2 {
   text-decoration: none;
 }
 
-.qualifications h3, p {
+.qualifications h3,
+p {
   color: #cbcbcb;
 }
 
@@ -203,6 +209,7 @@ h2 {
   -moz-column-gap: 5rem;
        column-gap: 5rem;
   justify-content: center;
+  width: 100%;
 }
 
 .project-list-items {
@@ -250,13 +257,15 @@ h2 {
   text-align: right;
 }
 
-input, textarea {
+input,
+textarea {
   width: 600px;
   box-sizing: border-box;
   border: 1px solid #FFE291;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #000;
 }
 
@@ -288,12 +297,34 @@ button {
   color: inherit;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 485px) {
   .left-sidebar {
     display: none;
   }
 
   .right-sidebar {
     display: none;
+  }
+
+  /*Menu*/
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 0;
+  }
+
+  /*About*/
+  .about {
+    margin: 1rem;
+    margin-top: 20rem;
   }
 }/*# sourceMappingURL=style.css.map */
